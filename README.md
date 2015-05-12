@@ -1,9 +1,11 @@
 # breakindent patch for vim
 
-This is my fork of [Václav Šmilauer's breakindent patch for vim][patch 1], most recently [updated by Eli Carter][patch 2]. It causes wrapped lines to be indented to line up with the start of the line, which is quite useful when editing anything that has multiple levels of indent.
+This was my fork of [Václav Šmilauer's breakindent patch for vim][patch 1], most recently [updated by Eli Carter][patch 2]. It causes wrapped lines to be indented to line up with the start of the line, which is quite useful when editing anything that has multiple levels of indent.
 
-You probably just want the patch, but you can also clone this whole repository into a directory called `patches` in the root of a vim source code distribution and use [quilt][] to apply/manipulate the patch.
+Since vim 7.4.338 (released 25 June 2014) this has been [incorporated into the vim mainline][news], so the patch is no longer needed.  Just do `:he 'breakindent'` to find out more.
 
 [patch 1]: http://www.mail-archive.com/vim-dev@vim.org/msg04076.html
 [patch 2]: https://retracile.net/wiki/VimBreakIndent
-[quilt]: http://savannah.nongnu.org/projects/quilt
+
+[news]: https://retracile.net/blog/2014/07/18/18.00
+
